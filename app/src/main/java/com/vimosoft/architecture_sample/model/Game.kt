@@ -1,6 +1,6 @@
 package com.vimosoft.architecture_sample.model
 
-class Game() {
+class Game(val chooseRandomPickFromArray: (Array<Pick>) -> Pick) {
     private var player1: Player = Player()
     private var player2: Player = Player()
 
@@ -11,7 +11,7 @@ class Game() {
 
     fun setMyPick(pick: Pick) {
         player1.pick = pick
-        player2.pick = Pick.values().toList().shuffled().first()
+        player2.pick = chooseRandomPickFromArray(Pick.values())
         checkGameResult()
     }
 
