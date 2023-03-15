@@ -79,7 +79,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_opponent"
-            tools:src="@drawable/scissor" />
+            tools:src="@drawable/scissors" />
 
         <TextView
             android:id="@+id/text_opponent_result"
@@ -120,10 +120,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/image_scissor"
+            android:id="@+id/image_scissors"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/scissor"
+            android:src="@drawable/scissors"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/image_rock"
             app:layout_constraintStart_toStartOf="parent"
@@ -134,20 +134,20 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/rock"
-            app:layout_constraintBottom_toBottomOf="@id/image_scissor"
+            app:layout_constraintBottom_toBottomOf="@id/image_scissors"
             app:layout_constraintEnd_toStartOf="@id/image_paper"
-            app:layout_constraintStart_toEndOf="@id/image_scissor"
-            app:layout_constraintTop_toTopOf="@id/image_scissor" />
+            app:layout_constraintStart_toEndOf="@id/image_scissors"
+            app:layout_constraintTop_toTopOf="@id/image_scissors" />
 
         <ImageView
             android:id="@+id/image_paper"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/paper"
-            app:layout_constraintBottom_toBottomOf="@id/image_scissor"
+            app:layout_constraintBottom_toBottomOf="@id/image_scissors"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/image_rock"
-            app:layout_constraintTop_toTopOf="@id/image_scissor" />
+            app:layout_constraintTop_toTopOf="@id/image_scissors" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
