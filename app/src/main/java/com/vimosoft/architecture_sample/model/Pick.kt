@@ -1,7 +1,9 @@
 package com.vimosoft.architecture_sample.model
 
-enum class Pick {
-    ROCK {
+import com.vimosoft.architecture_sample.R
+
+enum class Pick(val resId: Int) {
+    ROCK(R.drawable.rock) {
         override fun checkGameResult(opponentPick: Pick): GameResult {
             return when (opponentPick) {
                 ROCK -> GameResult.DRAW
@@ -10,7 +12,7 @@ enum class Pick {
             }
         }
     },
-    PAPER {
+    PAPER(R.drawable.paper) {
         override fun checkGameResult(opponentPick: Pick): GameResult {
             return when (opponentPick) {
                 ROCK -> GameResult.WIN
@@ -19,7 +21,7 @@ enum class Pick {
             }
         }
     },
-    SCISSORS {
+    SCISSORS(R.drawable.scissors) {
         override fun checkGameResult(opponentPick: Pick): GameResult {
             return when (opponentPick) {
                 ROCK -> GameResult.LOSE
