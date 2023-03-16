@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Architecture-Sample</string>
+    <string name="app_name">Rock-Paper-Scissors</string>
+    <string name="text_me">YOU</string>
+    <string name="text_opponent">OTHER</string>
+    <string name="win">WIN</string>
+    <string name="draw">DRAW</string>
+    <string name="lose">LOSE</string>
+    <string name="text_choice">Pick whatever you want</string>
+    <string name="reset">RESET</string>
 </resources>
