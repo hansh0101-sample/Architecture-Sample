@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         }
     }
 
-    // User Input에 대해 Presenter에 처리 위임
     private fun initOnClickListener() {
         with(binding) {
             imageScissors.setOnClickListener {
