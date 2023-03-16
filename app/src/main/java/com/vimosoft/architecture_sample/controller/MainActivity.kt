@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         initOnClickListener()
     }
 
-    // User Input에 대해 Model과의 상호작용 후 View 갱신
     private fun initOnClickListener() {
         with(binding) {
             imageScissors.setOnClickListener {
@@ -41,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Model을 View에 렌더링
     private fun setResult(player1: Player, player2: Player) {
         binding.run {
             imageMyPick.setImageResource(player1.pick?.resId ?: 0)
