@@ -30,7 +30,7 @@
                 android:id="@+id/text_me"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="나"
+                android:text="@string/text_me"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@id/image_my_pick"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -52,13 +52,13 @@
                 android:id="@+id/text_my_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text='@{viewModel.player1.gameResult == null ? "" : viewModel.player1.gameResult.message}'
+                android:text='@{viewModel.player1.gameResult == null ? "" : viewModel.player1.gameResult.name()}'
                 android:textSize="32sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/image_my_pick"
-                tools:text="승리" />
+                tools:text="WIN" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -75,7 +75,7 @@
                 android:id="@+id/text_opponent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="상대"
+                android:text="@string/text_opponent"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@id/image_opponent_pick"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -97,13 +97,13 @@
                 android:id="@+id/text_opponent_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text='@{viewModel.player2.gameResult == null ? "" : viewModel.player2.gameResult.message}'
+                android:text='@{viewModel.player2.gameResult == null ? "" : viewModel.player2.gameResult.name()}'
                 android:textSize="32sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/image_opponent_pick"
-                tools:text="패배" />
+                tools:text="LOSE" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -126,7 +126,7 @@
                 android:id="@+id/text_choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="무엇을 낼 지 선택해주세요!"
+                android:text="@string/text_choice"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -168,7 +168,7 @@
             android:id="@+id/button_reset"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="다시하기"
+            android:text="@string/reset"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
