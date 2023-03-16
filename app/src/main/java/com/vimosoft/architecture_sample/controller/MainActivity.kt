@@ -43,9 +43,9 @@ class MainActivity : AppCompatActivity() {
     private fun setResult(player1: Player, player2: Player) {
         binding.run {
             imageMyPick.setImageResource(player1.pick?.resId ?: 0)
-            textMyResult.text = player1.gameResult?.message ?: ""
+            textMyResult.text = player1.gameResult?.name ?: ""
             imageOpponentPick.setImageResource(player2.pick?.resId ?: 0)
-            textOpponentResult.text = player2.gameResult?.message ?: ""
+            textOpponentResult.text = player2.gameResult?.name ?: ""
         }
     }
 }
