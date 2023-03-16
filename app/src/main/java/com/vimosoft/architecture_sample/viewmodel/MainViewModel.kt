@@ -12,10 +12,15 @@ class MainViewModel {
 
     fun restart() {
         game.restart()
+        updateObservableField()
     }
 
     fun setMyPick(pick: Pick) {
         game.setMyPick(pick)
+        updateObservableField()
+    }
+
+    private fun updateObservableField() {
         player1.set(game.getPlayer1().copy())
         player2.set(game.getPlayer2().copy())
     }
